@@ -1,5 +1,5 @@
-
 package com.ok.dailyRevise;
+
 import java.util.*;
 
 public class OOP {
@@ -84,26 +84,33 @@ public class OOP {
 //        s2.getdetails();
         class car {
             String Cbrand;
-            int speed;
+            int Cspeed;
 
-            void getcardetails() {
-                System.out.println("Car's Brand: " + Cbrand + " & Cars's top speed is: " +speed);
+            car(String brand,int speed) {
+                Cbrand=brand;
+               Cspeed=speed;
+
+
             }
 
-
+            void getcardetails() {
+                System.out.println("Car's Brand: " + Cbrand + " & Cars's top speed is: " + Cspeed);
+            }
         }
 
-        car neww = new car();
+        car car1 = new car();
         System.out.println("Enter car brand\n");
-        neww.Cbrand = in.nextLine();
+        car1.Cbrand = in.nextLine();
         System.out.println("Enter car speed\n ");
-        neww.speed = in.nextInt();
-        neww.getcardetails();
-        car c2 =new car();
-        c2.Cbrand="Audi";
-        c2.speed=780;
-        c2.getcardetails();
+        car1.Cspeed = in.nextInt();
+        car1.getcardetails();
 
+        car car2 = new car();
+        car2.Cbrand = "Audi";
+        car2.Cspeed = 780;
+        car2.getcardetails();
+
+        car car3 = new car("Benz", 780);
 
 
     }
