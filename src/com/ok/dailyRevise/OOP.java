@@ -86,12 +86,15 @@ public class OOP {
             String Cbrand;
             int Cspeed;
 
-            car(String brand,int speed) {
-                Cbrand=brand;
-               Cspeed=speed;
+            car(String brand, int speed) {
+                Cbrand = brand;
+                Cspeed = speed;
+            }
 
+            car() {
 
             }
+
 
             void getcardetails() {
                 System.out.println("Car's Brand: " + Cbrand + " & Cars's top speed is: " + Cspeed);
@@ -111,6 +114,30 @@ public class OOP {
         car2.getcardetails();
 
         car car3 = new car("Benz", 780);
+
+        class student {
+            String Sname;
+            int Sage;
+
+
+            void getstudentdata() {
+                System.out.println("Name of student is " + Sname + " And age is " + Sage);
+
+
+            }
+        }
+        student data1 = new student();
+        System.out.println("Enter name of student");
+        in.nextLine();
+        data1.Sname=in.nextLine();
+        //when we press ENTER after nextInt() it leaves dummy \n buffer
+        //if we have to use nextLine() after nextInt() we have to flush dummy \n
+        //for that we have to write a dummy nextLine() and then our code
+
+        System.out.println("Enter age of student");
+        data1.Sage = in.nextInt();
+
+        data1.getstudentdata();
 
 
     }
