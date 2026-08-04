@@ -121,11 +121,12 @@ public class OOP {
 
 
             void getstudentdata() {
-                System.out.println("Name of student is " + Sname + " And age is " + Sage);
+                System.out.println("Student's name: " + Sname + " And age: " + Sage);
 
 
             }
         }
+
         student data1 = new student();
         System.out.println("Enter name of student");
         in.nextLine();
