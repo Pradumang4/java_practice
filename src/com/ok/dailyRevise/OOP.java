@@ -31,7 +31,7 @@ public class OOP {
                 System.out.println("Tuesday");
                 break;
             case 3:
-                System.out.println("Wednesday");
+                System.out.println("today is Wednesday");
                 break;
             case 4:
                 System.out.println("Thursday");
